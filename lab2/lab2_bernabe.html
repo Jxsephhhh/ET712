@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <h1>Joseph Bernabe</h1>
+    <script>
+        console.log('\n------------ Example 1: true/false in JS ------------')
+        // declaring variables
+        let day =  true
+        let night = false
+        let n1 = 9 // numerical variable
+        let n2 = -12
+        let n3 = "9" // string variable
+        let n4 = 9 
+
+        console.log(`Boolean value of the 'day' = ${day}`)
+        console.log(`is n1 less than or equal to n2? = ${n1<=n2}`)
+        console.log(`is n1 equal to n3? = ${n1==n3}`) // testing value
+        console.log(`is n1 equal to n3? = ${n1===n3}`) // testing value and the data type
+        console.log(`is n1 equal to n3? = ${n1===n4}`)
+
+        console.log('\n------------ Example 2: If Statements in JS ------------')
+        // declare variables
+        let goodmood = true;
+        let gotsleep = true;
+
+        if(goodmood === gotsleep){
+            console.log("Today is a good day!")
+        }
+        console.log("I am moody!")
+
+        let n5 = -8
+        // if statement to check if n5 is a negative number
+        if(n5<0){
+            console.log(`${n5} is a negative number`)
+        }
+
+        console.log('\n------------ Example 3: If-Else Statements in JS ------------')
+        // test if n5 is positive or negative
+        if(n5>0){
+            console.log(`${n5} is positive`)
+        }
+        else {
+            console.log(`${n5} is negative`)
+        }
+
+        console.log('\n------------ Example 4: If-Else Statements in JS ------------')
+        // test two numbers
+        let x1 = 3
+        let x2 = 5
+        if(x1===x2){
+            console.log("The numbers are equal")
+        }
+        else if(x1>x2){
+            console.log(`${x1} is greater than ${x2}`)
+        }
+        else if(x1<x2){
+            console.log(`${x1} is less than ${x2}`)
+        }
+        else{
+            console.log("Can't be compared!")
+        }
+
+        console.log('\n------------ Example 5: isNaN functions in JS ------------')
+        let userinput = prompt("Enter a number: ")
+        let checkinput = isNaN(parseInt(userinput)) // check if the user input is NOT a numerical value
+
+        console.log(checkinput)
+
+        if(checkinput===true){
+            console.log(`${userinput} is NOT a number`)
+        }
+        else{
+            console.log(`${userinput} is a number`)
+        }
+
+       console.log('\n------------ Example 6: logical operators in JS ------------')
+       let password = prompt("Enter a password")
+       password = password.trim() /// remove white space before and after the password
+       // test if the pass word has 6+ characters and no whitespace in between characters
+       if(password.length >= 6 && password.indexOf(" ")===-1){
+        console.log(`${password} is a valid password`)
+       }
+       else{
+        console.log(`${password} is NOT at the right format`)
+       }
+
+       console.log('\n------------ EXCERCISE ------------')
+
+    </script>
+</body>
+</html>

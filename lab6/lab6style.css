@@ -1,7 +1,6 @@
 *{box-sizing: border-box;} /*preserve 100% width of the */
-img{width: 100%;}
+img{width: 100%; display: block;}
 .header{
-    background-color: aqua;
     display: flex;
 }
 .logo{
@@ -20,7 +19,6 @@ img{width: 100%;}
 .quicklinks{
     width: 20%;
     font-size: 1.5em;
-    border: solid green 1px;
     margin-left: auto;
     display: flex;
 }
@@ -54,7 +52,6 @@ img{width: 100%;}
 .navlinks a:hover{
     background-color: aqua;
 }
-
 /* Main Content */
 .introimage{
     position: relative;
@@ -72,4 +69,76 @@ img{width: 100%;}
 }
 .intro p{
     font-size: 1.2em;
+}
+/* CARDS */
+.subtitle{
+    text-align: center;
+}
+.cardscontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card, .verticalcard{
+    height: auto;
+    width: 400px;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1% 2%;
+}
+.card img{
+    height: 250px;
+}
+.card p{
+    padding: 1em;
+}
+.card a{
+    display: block;
+    background-color: darkblue;
+    padding: 1em;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+}
+.card a:hover{
+    opacity: 0.6;
+    font-size: 1.05em;
+}
+.verticalcard{
+    position: relative;
+    transition: ease-in-out 200ms;
+}
+.verticalcard h3{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.verticalcard:hover{
+    transform: translateY(20px);
+    box-shadow: 0px -5px 10px gray;
+}
+.verticalcard:hover .h3card{
+    color: crimson;
+}
+.verticalcard:hover .imgvertical{
+    filter: blur(3px);
+}
+.linkcard{
+    margin: 2%;
+    display: block;
+    width: 400px;
+}
+/* FOOTER */
+.footer{
+    margin-top: 2em;
+    text-align: center;
+    background-color: darkblue;
+    color: azure;
+    padding: 3em;
 }
