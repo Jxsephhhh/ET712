@@ -1,0 +1,19 @@
+.shape, .rectangle{
+    width: 200px;
+    height: 300px;
+    background-color: orangered;
+    margin-bottom: 3em;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: olive;
+    border-radius: 50%;
+    margin-bottom: 3em;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin-bottom: 3em;
+}
