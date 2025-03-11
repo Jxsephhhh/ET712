@@ -53,3 +53,40 @@ btnrectangle.addEventListener("click", function(){
     shape.className = "rectangle"
 })
 
+/**
+ * Tuesday, March 11, events
+ */
+// example 6
+//onmouseout event
+// collect the element
+let event6 = document.querySelector(".event6");
+// add a mouseout event
+event6.onmouseout = function(){
+    alert("MOUSE OUT - Example 6")
+}
+
+// example 7
+// inline event 
+function openalert(){
+    alert("CLICK EVENT - Example 7")
+}
+
+// example 8 mouseover event
+// change the background color of a div when the mouse hover over the element
+// collect the element
+let divexample8 = document.querySelector(".divexample8")
+divexample8.onmouseout = function(){
+    let randred = Math.floor(Math.random()*255)
+    let randgreen = Math.floor(Math.random()*255)
+    let randblue = Math.floor(Math.random()*255)
+    divexample8.style.backgroundColor = `rgb(${randred},${randgreen},${randblue})`
+}
+
+// example 9: keyboard event
+// collect the elements
+let inputex9 = document.querySelector(".inputex9")
+let ex9paragraph = document.querySelector(".ex9paragraph")
+
+inputex9.onkeydown = function(event){
+    ex9paragraph.innerHTML = `key ${event.key} was pressed`
+}

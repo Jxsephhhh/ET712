@@ -60,15 +60,13 @@ let positiveSum = 0;
 let negativeSum = 0;
 let positiveCount = 0;
 let negativeCount = 0;
-
-// Use a for loop to check and sum all negative numbers and positive numbers
-for (let i = 0; i < num.length; i++) {
-    if (num[i] < 0) {
-        negativeCount++;  // Count negative numbers
-        negativeSum += num[i];  // Sum negative numbers
-    } else if (num[i] > 0) {
-        positiveCount++;  // Count positive numbers
-        positiveSum += num[i];  // Sum positive numbers
+for (let index = 0; index < num.length; index++) {
+    if (num[index] < 0) {
+        negativeCount++;
+        negativeSum += num[index];
+    } else if (num[index] > 0) {
+        positiveCount++;
+        positiveSum += num[index];
     }
 }
 
