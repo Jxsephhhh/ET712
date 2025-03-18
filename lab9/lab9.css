@@ -1,0 +1,70 @@
+*{box-sizing: border-box;}
+#content{
+    width: 2000px; /* allow to create horizontal scrolling*/
+    padding: 1em;
+    background-color: chocolate;
+}
+/* Example 2 */
+img{width: 100%; display: block; height: 100%;}
+.maincontainer, .gallerycontainer{
+    width: 600px;
+    height: 800px;
+    margin: auto;
+}
+.maincontainer{
+    position: relative;
+    z-index: 0;
+}
+.gallerycontainer{
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+}
+.galleryimg{
+    display: inline-block;
+    width: 600px;
+}
+.btnright, .btnleft{
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: none;
+    background-color: rgba(100,100,100,0.6)
+}
+.btnright{
+    right: 0%;
+}
+.btnleft{
+    left: 0%;
+}
+.btnright:hover, .btnleft:hover{
+    background-color: rgba(200,200,200,0.9);
+    color: crimson;
+}
+/* Example 3 */
+html{scroll-behavior: smooth;}
+.topcontainer{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(200,200,200,0.6);
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+}
+.toplink{
+    color: black;
+    padding-top: 1em;
+    display: block;
+    text-decoration: none;
+}
+.toplink:hover{
+    color: crimson;
+    font-weight: bolder;
+}
