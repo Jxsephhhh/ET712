@@ -1,0 +1,51 @@
+*{box-sizing: border-box;}
+#myform{
+    width: 400px;
+    margin: 3em auto;
+    background-color: lightcyan;
+    padding: 2em;
+}
+.btnsubmit{
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 0.5em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+}
+.btnsubmit:hover{
+    background-color: crimson;
+}
+.greeting{
+    width: 400px;
+    margin: auto;
+    display: none;
+}
+.greetuser{
+    color: crimson;
+    font-weight: bolder;
+}
+.formcontrol{
+    margin: 2em;
+}
+label{
+    display: inline-block;
+    width: 30%;
+    color: darkblue;
+}
+input{
+    display: inline-block;
+    width: 100%;
+    color: darkblue;
+    padding: 0.5em;
+}
+.errormsg{
+    color: crimson;
+    font-size: 0.8em;
+}
+.btnsubmit:disabled{
+    background-color: darkgray;
+    cursor: not-allowed;
+    color: darkblue;
+}
