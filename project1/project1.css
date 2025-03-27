@@ -38,3 +38,41 @@ body {
     opacity: 0.6;
     transform: scale(1.05)
 }
+/* NAv Links */
+.navlinks {
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+.navlinks a{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    color: blueviolet;
+    text-decoration: none;
+}
+.navlinks a:hover{
+    background-color: lavender;
+}
+/* Main Content */
+.mainimage{
+    position: relative;
+}
+.main{
+    position:absolute;
+    bottom: 10%;
+    right: 15%;
+    background-color: rgba(200,200,200, 0.6);
+    padding: 1em 2em;
+    border-radius: 12px;
+}
+.main h1{
+    color: yellow;
+}
+.main p{
+    font-size: 1.2em;
+    color: white;
+}
