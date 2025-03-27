@@ -5,7 +5,7 @@ img{width: 100%; display: block;}
     background-color: blueviolet;
 }
 body {
-    background-color: black;
+    background-color: white;
 }
 .logo{
     width: 12%;
@@ -18,13 +18,14 @@ body {
     padding: 1em;
     font-size: 2.5em;
     color: yellow;
-    font-family: "Franklin Gothic Medium";
+    font-weight: bolder;
 }
 .quicklinks{
     width: 20%;
     font-size: 1.5em;
     margin-left: auto;
     display: flex;
+    font-weight: bolder;
 }
 .quicklinks a{
     display: inline-block;
@@ -53,6 +54,7 @@ body {
     font-size: 1.2em;
     color: blueviolet;
     text-decoration: none;
+    font-weight: bolder;
 }
 .navlinks a:hover{
     background-color: lavender;
@@ -62,10 +64,10 @@ body {
     position: relative;
 }
 .main{
-    position:absolute;
-    bottom: 10%;
+    position: absolute;
+    bottom: -30%;
     right: 15%;
-    background-color: rgba(200,200,200, 0.6);
+    background-color: rgba(174,55,255, 0.6);
     padding: 1em 2em;
     border-radius: 12px;
 }
@@ -75,4 +77,76 @@ body {
 .main p{
     font-size: 1.2em;
     color: white;
+}
+/* CARDS */
+.subtitle{
+    text-align: center;
+}
+.cardscontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card, .verticalcard{
+    height: auto;
+    width: 400px;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1% 2%;
+}
+.card img{
+    height: 250px;
+}
+.card p{
+    padding: 1em;
+}
+.card a{
+    display: block;
+    background-color: blueviolet;
+    padding: 1em;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+}
+.card a:hover{
+    opacity: 0.6;
+    font-size: 1.05em;
+}
+.verticalcard{
+    position: relative;
+    transition: ease-in-out 200ms;
+}
+.verticalcard h3{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.verticalcard:hover{
+    transform: translateY(20px);
+    box-shadow: 0px -5px 10px gray;
+}
+.verticalcard:hover .h3card{
+    color: crimson;
+}
+.verticalcard:hover .imgvertical{
+    filter: blur(3px);
+}
+.linkcard{
+    margin: 2%;
+    display: block;
+    width: 400px;
+}
+/* FOOTER */
+.footer{
+    margin-top: 2em;
+    text-align: center;
+    background-color: darkblue;
+    color: azure;
+    padding: 3em;
 }
