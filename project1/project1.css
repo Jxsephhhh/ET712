@@ -33,7 +33,7 @@ body {
     text-align: right;
     padding: 1.2em 0.2em;
     text-decoration: none;
-    color: yellow;
+    color:yellow;
 }
 .quicklinks a:hover{
     opacity: 0.6;
@@ -89,17 +89,20 @@ body {
 }
 .card, .verticalcard{
     height: auto;
-    width: 400px;
+    width: 475px;
     box-shadow: 1px 1px 5px gray;
     border-radius: 10px;
     overflow: hidden;
     margin: 1% 2%;
 }
 .card img{
-    height: 250px;
+    height: 200px;
 }
 .card p{
     padding: 1em;
+    font-size: larger;
+    text-align: center;
+    
 }
 .card a{
     display: block;
@@ -109,6 +112,7 @@ body {
     text-align: center;
     font-weight: 900;
     text-decoration: none;
+    color: yellow;
 }
 .card a:hover{
     opacity: 0.6;
