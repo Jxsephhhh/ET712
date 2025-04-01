@@ -4,8 +4,8 @@ img{width: 100%; display: block;}
     display: flex;
     background-color: blueviolet;
 }
-body {
-    background-color: white;
+.body{
+    background-color: black;
 }
 .logo{
     width: 12%;
@@ -110,13 +110,25 @@ body {
     padding: 1em;
     color: whitesmoke;
     text-align: center;
-    font-weight: 900;
+    font-weight: bolder;
     text-decoration: none;
     color: yellow;
 }
 .card a:hover{
     opacity: 0.6;
     font-size: 1.05em;
+}
+.mathgame img{
+    opacity: 0.3;
+}
+.numbergame img{
+    opacity: 0.3;
+}
+.animalgame img{
+    opacity: 0.3;
+}
+.shapegame img{
+    opacity: 0.3;
 }
 .verticalcard{
     position: relative;
@@ -150,7 +162,7 @@ body {
 .footer{
     margin-top: 2em;
     text-align: center;
-    background-color: darkblue;
-    color: azure;
+    background-color: blueviolet;
+    color: white;
     padding: 3em;
 }

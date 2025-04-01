@@ -8,7 +8,7 @@
     <script src="project1.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <section class="logo">
             <img src="introImage2.jpg" alt="image of intro" title="PRE-K Cool Tools">
         </section>
@@ -20,14 +20,14 @@
     </header>
 
     <nav class="navlinks">
-        <a href="https://learn.khanacademy.org/khan-academy-kids/" target="_blank" rel="noopener noreferrer">Khan Academy Kids</a>
-        <a href="https://www.duolingo.com/" target="_blank" rel="noopener noreferrer">Duolingo</a>
-        <a href="https://www.brainpop.com/discover/" target="_blank" rel="noopener noreferrer">Brain Pop</a>
-        <a href="https://www.coolmathgames.com/" target="_blank" rel="noopener noreferrer">Cool Math Games</a>
+        <a href="#home" target="_self" rel="noopener noreferrer">Home</a>
+        <a href="#about" target="_self" rel="noopener noreferrer">About</a>
+        <a href="#activities" target="_self" rel="noopener noreferrer">Activities</a>
+        <a href="#photos" target="_self" rel="noopener noreferrer">Photos</a>
     </nav>
 
     <main>
-        <section class="Mainimage">
+        <section class="Mainimage" id="about">
             <img src="young-students-campus-helps-friend-catching-up-learning.jpg" alt="mainimage">
             <div class="main">
                 <h1>Fun Kid's Learning Tools</h1>
@@ -36,15 +36,15 @@
         </section>
 
         <!-- CARDS -->
-         <h1 class="title">Activities</h1>
-         <h2 class="subtitle">BLANK</h2>
+         <h1 class="title" id="activities">Activities</h1>
+         <h2 class="subtitle">Interactive activities for children to have fun and learn</h2>
          <section class="cardscontainer">
             <div class="card">
                 <img src="mathcard.jpg" alt="image of math">
                 <h2 class="subtitle">Math Activity</h2>
                 <p>Check out this cool math game!</p>
                 <br>
-                <a href="">View Math Game</a>
+                <a href="#mathgame" rel="noopener noreferrer">View Math Game</a>
             </div>
 
             <div class="card">
@@ -52,7 +52,7 @@
                 <h2 class="subtitle">Shape Activity</h2>
                 <p>Check out this shape game!</p>
                 <br>
-                <a href="">View Shape Game</a>
+                <a href="#shapegame" rel="noopener noreferrer">View Shape Game</a>
             </div>
 
             <div class="card">
@@ -60,7 +60,7 @@
                 <h2 class="subtitle">Animals Activity</h2>
                 <p>Check out this cool animal game!</p>
                 <br>
-                <a href="">View Animal Game</a>
+                <a href="#animalgame" rel="noopener noreferrer">View Animal Game</a>
             </div>
 
             <div class="card">
@@ -68,11 +68,42 @@
                 <h2 class="subtitle">Numbers Activity</h2>
                 <p>Check out this cool number game!</p>
                 <br>
-                <a href="">View Number Game</a>
+                <a href="#numbergame" rel="noopener noreferrer">View Number Game</a>
             </div>
 
          </section>
+
+         <section class="mathgame" id="mathgame">
+            <h1 class="title">Math Game</h1>
+            <h2 class="subtitle">Interactive math game for kids</h2>
+            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="math background image">
+         </section>
+
+
+         <section class="numbergame" id="numbergame">
+            <h1 class="title">Number Game</h1>
+            <h2 class="subtitle">Interactive number game for kids</h2>
+            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="number background image">
+         </section>
+
+         <section class="animalgame" id="animalgame">
+            <h1 class="title">Animal Game</h1>
+            <h2 class="subtitle">Interactive animal game for kids</h2>
+            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="animal background image">
+         </section>
+
+         <section class="shapegame" id="shapegame">
+            <h1 class="title">Shape Game</h1>
+            <h2 class="subtitle">Interactive shape game for kids</h2>
+            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="shape background image">
+         </section>
+
+
+
     </main>
     
+    <footer class="footer">
+        Pre-K Cool Tools @ Joseph Bernabe, 2025
+    </footer>
 </body>
 </html>
