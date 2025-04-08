@@ -13,17 +13,12 @@
             <img src="introImage2.jpg" alt="image of intro" title="PRE-K Cool Tools">
         </section>
         <section class="title">PRE-K Cool Tools</section>
-        <section class="quicklinks">
-            <a href="">&#128722;</a>
-            <a href="">Sign in</a>
-        </section>
     </header>
 
     <nav class="navlinks">
         <a href="#home" target="_self" rel="noopener noreferrer">Home</a>
         <a href="#about" target="_self" rel="noopener noreferrer">About</a>
         <a href="#activities" target="_self" rel="noopener noreferrer">Activities</a>
-        <a href="#photos" target="_self" rel="noopener noreferrer">Photos</a>
     </nav>
 
     <main>
@@ -31,7 +26,7 @@
             <img src="young-students-campus-helps-friend-catching-up-learning.jpg" alt="mainimage">
             <div class="main">
                 <h1>Fun Kid's Learning Tools</h1>
-                <p>A website to make learning fun and interactive for kids!</p>
+                <p>Welcome to Pre-K Cool Tools, where learning is fun and interactive! Our mission is to help young children develop essential skills through engaging activities and games. From shapes and numbers to animals and math, every tool on our site is designed to make learning exciting and effective for little learners. Join us as we explore, play, and grow together—because learning should always be this fun!</p>
             </div>
         </section>
 
@@ -75,35 +70,107 @@
 
          <section class="mathgame" id="mathgame">
             <h1 class="title">Math Game</h1>
-            <h2 class="subtitle">Interactive math game for kids</h2>
-            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="math background image">
-         </section>
+            <h2 class="subtitle">Addition Practice for Kids</h2>
+            <div class="game-container">
+                <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="math background image" class="background-image">
+                <div class="addition-game">
+                    <div class="problem-container">
+                        <span id="num1">3</span>
+                        <span class="operator">+</span>
+                        <span id="num2">2</span>
+                        <span class="operator">=</span>
+                        <span class="answer-box">?</span>
+                    </div>
+                    <div class="options-container" id="options">
+                        <button class="option">1</button>
+                        <button class="option">2</button>
+                        <button class="option">3</button>
+                        <button class="option">4</button>
+                        <button class="option">5</button>
+                        <button class="option">6</button>
+                    </div>
+                    <div class="score-container">
+                        <p>Score: <span id="score">0</span></p>
+                    </div>
+                    <button id="new-problem" class="new-problem-btn">New Problem</button>
+                </div>
+            </div>
+        </section>
+        
 
 
          <section class="numbergame" id="numbergame">
             <h1 class="title">Number Game</h1>
             <h2 class="subtitle">Interactive number game for kids</h2>
-            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="number background image">
-         </section>
+            <div class="game-container">
+                <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="background image for number counting game" class="background-image">
+                <div class="counting-game">
+                    <p>Count Along! Click on a number to count it.</p>
+                    <ul id="numberlist">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
 
-         <section class="animalgame" id="animalgame">
+        <section class="animalgame" id="animalgame">
             <h1 class="title">Animal Game</h1>
-            <h2 class="subtitle">Interactive animal game for kids</h2>
-            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="animal background image">
-         </section>
+            <h2 class="subtitle">Match the animal to its name</h2>
+            <div class="game-container">
+                <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="animal background image" class="background-image">
+                <div class="animal-game">
+                    <p>Match the animal picture with its name!</p>
+                    <div id="animal-grid">
+                        <!-- Animal images and names will be generated by JavaScript -->
+                    </div>
+                    <div class="game-controls">
+                        <div class="score-display">
+                            <p>Matches: <span id="matches">0</span></p>
+                        </div>
+                        <button id="reset-animal-game" class="reset-btn">New Game</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-         <section class="shapegame" id="shapegame">
+        <section class="shapegame" id="shapegame">
             <h1 class="title">Shape Game</h1>
-            <h2 class="subtitle">Interactive shape game for kids</h2>
-            <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="shape background image">
-         </section>
-
+            <h2 class="subtitle">Learn shapes by clicking</h2>
+            <div class="game-container">
+                <img src="Parenta-The-Importance-Of-Children-Feeling-Represented.jpg" alt="shape background image" class="background-image">
+                <div class="shape-game">
+                    <p>Click on the shape to see a new one!</p>
+                    <div id="shape-container">
+                        <div id="shape" class="circle">
+                            <span id="shape-name">Circle</span>
+                        </div>
+                    </div>
+                    <div class="shape-info">
+                        <p>Shapes learned: <span id="shapes-count">0</span>/6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
     
-    <footer class="footer">
-        Pre-K Cool Tools @ Joseph Bernabe, 2025
-    </footer>
+<!-- Original HTML file last few lines -->
+<footer class="footer">
+    Pre-K Cool Tools @ Joseph Bernabe, 2025
+</footer>
+
+<!-- ADD SCROLL TO TOP BUTTON HERE -->
+<button id="scrollToTopBtn" class="scroll-to-top">↑</button>
 </body>
 </html>
