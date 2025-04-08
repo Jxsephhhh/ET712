@@ -67,6 +67,7 @@ img{width: 100%; display: block;}
     position: absolute;
     bottom: -30%;
     right: 15%;
+    left: 15%;
     background-color: rgba(174,55,255, 0.6);
     padding: 1em 2em;
     border-radius: 12px;
@@ -121,14 +122,430 @@ img{width: 100%; display: block;}
 .mathgame img{
     opacity: 0.3;
 }
+.addition-game {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.problem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    font-size: 3em;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.operator {
+    margin: 0 0.3em;
+}
+
+.answer-box {
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 3px solid blueviolet;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5em;
+}
+
+.option {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: yellow;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.option:hover {
+    transform: scale(1.1);
+    background-color: #ffee99;
+}
+
+.score-container {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blueviolet;
+    margin: 1em 0;
+}
+
+.new-problem-btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-problem-btn:hover {
+    background-color: #8a2be2;
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+    color: white;
+}
 .numbergame img{
     opacity: 0.3;
 }
+#numberlist li{
+    list-style: none;
+    border-bottom: 1px solid lightgray;
+    width: 200px;
+    padding: 1em 2em;
+    background-color: beige;
+}
+#numberlist li:hover{
+    background-color: crimson;
+    color: antiquewhite;
+}
+.game-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.counting-game {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.counting-game p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blueviolet;
+    margin-bottom: 1em;
+}
+
+#numberlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+#numberlist li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 50%;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#numberlist li:hover {
+    background-color: crimson;
+    color: antiquewhite;
+    transform: scale(1.1);
+}
+
+#numberlist li.counted {
+    background-color: green;
+    color: white;
+}
+
 .animalgame img{
     opacity: 0.3;
 }
+.animal-game {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.animal-game p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blueviolet;
+    margin-bottom: 1em;
+}
+
+#animal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 2em 0;
+    width: 100%;
+}
+
+.animal-card {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.animal-card.animal-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.animal-card.selected {
+    border: 3px solid blueviolet;
+    transform: scale(1.05);
+}
+
+.animal-card.matched {
+    background-color: #a5d6a7;
+    cursor: default;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.score-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.reset-btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #8a2be2;
+}
+
+.game-complete {
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* Since we can't use real images, we'll use colored blocks with animal silhouettes */
+.cat {
+    background-color: #ffcc80;
+}
+
+.dog {
+    background-color: #80cbc4;
+}
+
+.elephant {
+    background-color: #b39ddb;
+}
+
+.giraffe {
+    background-color: #fff59d;
+}
+
+.lion {
+    background-color: #ffab91;
+}
+
+.monkey {
+    background-color: #c5e1a5;
+}
 .shapegame img{
     opacity: 0.3;
+}
+.shape-game {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.shape-game p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blueviolet;
+    margin-bottom: 1em;
+}
+
+#shape-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+#shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+#shape:hover {
+    transform: scale(1.1);
+}
+
+/* Shape styles */
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #FF5733;
+    border-radius: 50%;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #33A1FF;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #33FF57;
+    display: flex;
+    justify-content: center;
+}
+
+.triangle #shape-name {
+    position: relative;
+    top: 120px;
+}
+
+.rectangle {
+    width: 250px;
+    height: 125px;
+    background-color: #FF33A8;
+}
+
+.oval {
+    width: 250px;
+    height: 150px;
+    background-color: #A833FF;
+    border-radius: 50%;
+}
+
+.diamond {
+    width: 150px;
+    height: 150px;
+    background-color: #FFBD33;
+    transform: rotate(45deg);
+}
+
+.diamond #shape-name {
+    transform: rotate(-45deg);
+}
+
+.shape-info {
+    margin-top: 2em;
+}
+
+/* Animation for shape change */
+@keyframes pop {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.pop-animation {
+    animation: pop 0.5s ease;
+}
+
+/* Completion style */
+.completed {
+    background-color: green;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
 }
 .verticalcard{
     position: relative;
@@ -165,4 +582,11 @@ img{width: 100%; display: block;}
     background-color: blueviolet;
     color: white;
     padding: 3em;
+}
+/* Add at the end of your project1.css file */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* ... rest of the CSS code ... */
 }
