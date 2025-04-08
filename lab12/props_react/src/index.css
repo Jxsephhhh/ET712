@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{box-sizing: border-box;}
+img{width: 100%; display: block;}
+/* -- comments -- */
+/* card */
+.card{
+  width: 250px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.content, .metadata, .comment{
+  text-align: center;
+  margin-top: 1rem,
+}
+.linkauthor{
+  color: darkblue;
+  font-weight: 900;
+}
+.postdate{
+  font-style: italic;
+  color: gray;
+  font-size: 0.8em;
+}
+.card:hover{
+  box-shadow: none;
+  border: solid 3px gray;
+}
+/* App.Js */
+.maincontainer{
+  display: flex;
+  justify-content: center;
+}
