@@ -398,8 +398,6 @@ img{width: 100%; display: block;}
     text-align: center;
     margin: 1em 0;
 }
-
-/* Since we can't use real images, we'll use colored blocks with animal silhouettes */
 .cat {
     background-color: #ffcc80;
 }
