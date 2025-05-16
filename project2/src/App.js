@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  // Sample car data
   const cars = [
     {
       id: 1,
@@ -10,7 +9,7 @@ function App() {
       model: 'Civic',
       year: 2023,
       price: '$22,950',
-      image: ''
+      image: '/images/honda-civic-black.webp'
     },
     {
       id: 2,
@@ -42,7 +41,7 @@ function App() {
     <div className="dealership-app">
       {/* Header */}
       <header className="header">
-        <h1 className="title">Auto Haven Dealership</h1>
+        <h1 className="title">QCC Dealership</h1>
         <nav>
           <ul>
             <li><a href="#inventory">Inventory</a></li>
@@ -99,22 +98,22 @@ function App() {
       {/* About Section */}
       <section id="about" className="about">
         <h2>About Us</h2>
-        <p>Auto Haven Dealership has been serving our community for over 20 years. We pride ourselves on offering quality vehicles and exceptional customer service.</p>
+        <p>The QCC Dealership has been serving our community for over 20 years. We pride ourselves on offering quality vehicles and exceptional customer service.</p>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="contact">
         <h2>Contact Us</h2>
         <div className="contact-info">
-          <p>Phone: (555) 123-4567</p>
-          <p>Email: info@autohaven.com</p>
-          <p>Address: </p>
+          <p>Phone: (718)631-6262</p>
+          <p>Email: info@qcc.com</p>
+          <p>Address: 222-05, 56th Avenue Bayside, NY 11364</p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2025 Auto Haven Dealership. All rights reserved.</p>
+        <p>&copy; 2025 QCC Dealership. All rights to Joseph Bernabe</p>
       </footer>
     </div>
   );
