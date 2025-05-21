@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import honda_civic from './images/2025-honda-civic-black.webp'
+import toyota_camry from './images/trim-2023-camry-le.png'
+import ford_mustang from './images/image-by-path.webp'
+import chevy_equinox from './images/2023-Chevy-Equinox-Premier-Model-Left-728x400.avif'
 
 function App() {
   const cars = [
@@ -9,7 +13,7 @@ function App() {
       model: 'Civic',
       year: 2023,
       price: '$22,950',
-      image: '/images/honda-civic-black.webp'
+      image: honda_civic
     },
     {
       id: 2,
@@ -17,7 +21,7 @@ function App() {
       model: 'Camry',
       year: 2023,
       price: '$25,945',
-      image: '/api/placeholder/300/200'
+      image: toyota_camry
     },
     {
       id: 3,
@@ -25,7 +29,7 @@ function App() {
       model: 'Mustang',
       year: 2023,
       price: '$27,770',
-      image: '/api/placeholder/300/200'
+      image: ford_mustang
     },
     {
       id: 4,
@@ -33,7 +37,7 @@ function App() {
       model: 'Equinox',
       year: 2023,
       price: '$26,600',
-      image: '/api/placeholder/300/200'
+      image: chevy_equinox
     }
   ];
 
