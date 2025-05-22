@@ -1,0 +1,31 @@
+@keyframes slideInDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; }}
+header { animation: slideInDown 0.6s ease-out; background-color: var(--secondary-color); color: white; padding: calc(var(--spacing-unit)*1.5) 0; }
+.hero { animation: fadeIn 1s ease-out; text-align: center; padding: calc(var(--spacing-unit)*4) 1rem; background: var(--secondary-color) url('https://images.unsplash.com/photo-1606813907033-7238a4b17773?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat; color: #fff; position: relative; }
+.hero::after { content: ''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(28,75,130,0.6); }
+.hero h2, .hero p, .hero .btn-primary { position: relative; z-index:1; }
+.hero .btn-primary { margin-top: var(--spacing-unit); animation: fadeIn 1.2s ease-out; }
+.btn-primary, .btn-secondary { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.btn-primary:hover, .btn-secondary:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+main.container { margin-top: var(--spacing-unit); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: var(--spacing-unit); margin: calc(var(--spacing-unit)*2) 0; }
+.card { background-color: var(--card-bg); border-radius: var(--border-radius); box-shadow: var(--box-shadow); padding: calc(var(--spacing-unit)*1.5); animation: fadeIn 0.5s ease-out; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+@keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; }}
+.modal-content { animation: popIn 0.25s ease-out; }
+footer { animation: fadeIn 1s ease-out; background-color: var(--secondary-color); color: white; padding: calc(var(--spacing-unit)*2) 0; margin-top: calc(var(--spacing-unit)*3); text-align: center; }
+.preview-card { background: var(--card-bg); border-radius: var(--border-radius); padding: var(--spacing-unit); box-shadow: var(--box-shadow); text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.preview-card:hover { transform: scale(1.03); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+@media (max-width:768px) { .hero { padding: calc(var(--spacing-unit)*3) 1rem; } nav ul { flex-direction: column; gap: var(--spacing-unit); }}
+
+@keyframes slideInDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; }}
+header { animation: slideInDown 0.6s ease-out; background-color: var(--secondary-color); color: white; padding: calc(var(--spacing-unit)*1.5) 0; }
+
+/* Section headings */
+main.container section h2,
+main.container section h3,
+.about h3,
+.info h3,
+.inventory-preview h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-unit);
+}
