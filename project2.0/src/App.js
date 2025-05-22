@@ -37,7 +37,7 @@ function App() {
     <>
       <header>
         <div className="container">
-          <div className="logo">CarDealership</div>
+          <div className="logo">QCC Dealership</div>
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -64,8 +64,8 @@ function App() {
 
       <footer>
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} CarDealership. All rights reserved.</p>
-          <p>1234 Main St, Anytown, NY • (555) 123-4567</p>
+          <p>&copy; {new Date().getFullYear()} QCC Dealership. All rights reserved to Joseph Bernabe.</p>
+          <p>222-05 56th Ave, Bayside, NY 11364 • (718) 631-6262</p>
         </div>
       </footer>
     </>
